@@ -4,72 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
     <title>Formulario Teste</title>
-    <style>
-        body {
-            margin: 0%; 
-        }
-
-        header {
-            padding: 10px;
-        }
-
-        header h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            margin-bottom: -1%;
-        }
-
-        header p {
-            text-align: center;
-        }
-
-        fieldset {
-            border: none;
-            max-width: 600px;
-            margin: auto;
-        }
-
-        div.campo {
-            display: inline-block;
-            padding: 5px;
-            margin-right: 20px;
-            font-weight: bold;
-            
-        }
-
-        div > label {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        div.devweb {
-            display: block;
-            font-weight: normal;
-        }
-       
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-        }
-
-        button {
-            margin-left: 110px;
-        }
-
-        button:hover {
-            background-color: lightseagreen;
-            color: lightskyblue;
-        }
-
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Cadastro</h1>
-        <p>Complete suas informações</p>
-    </header>
     <form>
         <fieldset>
+            <header>
+                <h1>Cadastro</h1>
+                <p>Complete suas informações</p>
+            </header>
             <div class="campo">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" required>
