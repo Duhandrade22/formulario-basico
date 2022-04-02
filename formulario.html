@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Teste</title>
+    <style>
+        body {
+            margin: 0%; 
+        }
+
+        header {
+            padding: 10px;
+        }
+
+        header h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-bottom: -1%;
+        }
+
+        header p {
+            text-align: center;
+        }
+
+        fieldset {
+            border: none;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        div.campo {
+            display: inline-block;
+            padding: 5px;
+            margin-right: 20px;
+            font-weight: bold;
+            
+        }
+
+        div > label {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.devweb {
+            display: block;
+            font-weight: normal;
+        }
+       
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        button {
+            margin-left: 110px;
+        }
+
+        button:hover {
+            background-color: lightseagreen;
+            color: lightskyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+        <p>Complete suas informações</p>
+    </header>
+    <form>
+        <fieldset>
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" required>
+            </div>
+            <div class="campo">
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" name="Sobrenome" required>
+            </div>
+            <div class="campo">
+                <label for="e-mail">E-mail</label>
+                <input type="text" name="e-mail" required>
+            </div>
+
+            <p>De qual lado da aplicação você desenvolve?</p>
+
+                <div class="devweb">
+                    <input type="radio" name="devweb" value="Front-end">Front-end
+                </div>
+                <div class="devweb">
+                    <input type="radio" name="devweb" value="Back-end">Back-end
+                </div>
+                <div class="devweb">
+                    <input type="radio" name="devweb" value="Fullstack">Fullstack
+                </div>
+            
+            <p>Senioridade</p>
+
+            <select required>
+                <option selected disabled value="">Selecione</option>
+                <option value="">Júnior</option>
+                <option value="">Pleno</option>
+                <option value="">Sênior</option>
+            </select>
+
+            <p>Selecione as tecnologias que utiliza:</p>
+
+            <input type="checkbox" value="HTML">HTML
+            <input type="checkbox" value="CSS">CSS
+            <input type="checkbox" value="JavaScript">JavaScript
+            <input type="checkbox" value="PHP">PHP
+            <input type="checkbox" value="C#">C#
+            <input type="checkbox" value="Python">Python
+            <input type="checkbox" value="Java">Java
+            
+            <p>Conte um pouco mais da sua experência</p>
+            <div>
+                <textarea name="experiencia" id="experiencia" cols="40" rows="6"></textarea>
+            </div>
+           
+            <button type="submit">Concluído</button>
+           
+        </fieldset>
+    </form>
+</body>
+</html>
